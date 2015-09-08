@@ -8,11 +8,13 @@
 
 import UIKit
 
+@IBDesignable
 class CircleProgressBar: UIView {
 
     /**
     *  progress value
     */
+    @IBInspectable
     var progress:CGFloat = 0 {
         didSet{
             setNeedsDisplay()
@@ -22,6 +24,7 @@ class CircleProgressBar: UIView {
     /**
     *  border Width
     */
+    @IBInspectable
     var borderWidth:CGFloat = 0 {
         didSet{
             setNeedsDisplay()
@@ -29,6 +32,7 @@ class CircleProgressBar: UIView {
     }
 
     // border color
+    @IBInspectable
     var borderColor:UIColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1) {
         didSet{
             setNeedsDisplay()
@@ -37,6 +41,7 @@ class CircleProgressBar: UIView {
 
     
     // progress color
+    @IBInspectable
     var progressColor:UIColor = UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1) {
         didSet{
             setNeedsDisplay()
@@ -44,6 +49,7 @@ class CircleProgressBar: UIView {
     }
 
     // base color
+    @IBInspectable
     var baseColor:UIColor = UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 0.8) {
         didSet{
             setNeedsDisplay()
